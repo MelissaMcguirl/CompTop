@@ -2,8 +2,6 @@
 #
 # A script to take a transformed Ripser output file and create persistence diagrams
 #
-# python plotPD.py inputFile dim0-title dim0_savename dim1-title  dim1_savename 
-#
 # Author: Melissa R McGuirl
  
 import sys
@@ -46,6 +44,7 @@ def main():
 		plt.scatter(x, y)
 		plt.xlabel('birth')		
 		plt.ylabel('death')
+		# User should modify this part to get appropriate titles/savenames 
 		fig.suptitle(file[len(DIR) + 17:-4])
 		fig.savefig(OUT + '/' + file[len(DIR) + 17:-4] + 'jpg')
 		plt.close(fig)
