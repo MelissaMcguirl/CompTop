@@ -10,7 +10,6 @@ Author: Melissa McGuirl
 
 import sys, os
 import numpy as np
-import subprocess 
 import argparse
 
 # Compute bottleneck dist 
