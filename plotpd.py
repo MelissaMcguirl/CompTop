@@ -45,9 +45,9 @@ def main():
 		plt.xlabel('birth')		
 		plt.ylabel('death')
 		# User should modify this part to get appropriate titles/savenames 
-		fig.suptitle(file[len(DIR) + 17:-4])
-		fig.savefig(OUT + '/' + file[len(DIR) + 17:-4] + 'jpg')
-		plt.close(fig)
+		fig.suptitle(file[len(DIR) :-4])
+		fig.savefig(OUT + '/' + file[len(DIR) :-4])
+                plt.close(fig)
 		
 if __name__ == "__main__":
     
