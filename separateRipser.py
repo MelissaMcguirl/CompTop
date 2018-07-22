@@ -38,8 +38,8 @@ def main():
 
         inFile = open(file, 'r')
         lines = inFile.read().splitlines()
-        outFile0 = OUT + '/dim0bars_' + file[len(DIR)+1::]
-        outFile1 = OUT + '/dim1bars_' + file[len(DIR)+1::]
+        outFile0 = OUT + '/dim0bars_' + file[len(DIR)::]
+        outFile1 = OUT + '/dim1bars_' + file[len(DIR)::]
         outFile0 = open(outFile0, 'w')
         outFile1 = open(outFile1, 'w')
 
